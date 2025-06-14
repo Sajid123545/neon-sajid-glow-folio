@@ -70,12 +70,12 @@
 @layer components {
   .neon-text {
     color: #ff0080;
-    text-shadow: 0 0 10px #ff0080, 0 0 20px #ff0080, 0 0 30px #ff0080;
+    text-shadow: 0 0 8px #ff0080, 0 0 16px #ff0080, 0 0 24px #ff0080;
   }
   
   .neon-border {
     border: 2px solid #ff0080;
-    box-shadow: 0 0 10px #ff0080, inset 0 0 10px rgba(255, 0, 128, 0.1);
+    box-shadow: 0 0 8px #ff0080, inset 0 0 8px rgba(255, 0, 128, 0.1);
   }
   
   .glass-effect {
@@ -98,11 +98,11 @@
   
   .particle {
     position: absolute;
-    width: 4px;
-    height: 4px;
+    width: 3px;
+    height: 3px;
     background: #ff0080;
     border-radius: 50%;
-    box-shadow: 0 0 10px #ff0080;
+    box-shadow: 0 0 6px #ff0080;
     animation: float 6s ease-in-out infinite;
   }
 }
