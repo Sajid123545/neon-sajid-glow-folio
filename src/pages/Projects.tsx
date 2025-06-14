@@ -1,6 +1,6 @@
 
 import { useState, useEffect } from 'react';
-import { ExternalLink, Github, ArrowRight } from 'lucide-react';
+import { ExternalLink, ArrowRight } from 'lucide-react';
 
 const Projects = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -73,20 +73,16 @@ const Projects = () => {
           ))}
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+        <div className="flex justify-center">
           <a
             href={project.liveUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center space-x-2 px-4 py-2 bg-gradient-to-r from-neon-pink to-neon-purple rounded-lg text-white font-semibold hover:shadow-lg hover:shadow-neon-pink/50 transition-all duration-300 text-sm sm:text-base"
+            className="flex items-center justify-center space-x-2 px-6 py-3 bg-gradient-to-r from-neon-pink to-neon-purple rounded-lg text-white font-semibold hover:shadow-lg hover:shadow-neon-pink/50 transition-all duration-300 hover:scale-105 text-sm sm:text-base"
           >
-            <ExternalLink size={16} />
+            <ExternalLink size={18} />
             <span>Live Demo</span>
           </a>
-          <button className="flex items-center justify-center space-x-2 px-4 py-2 border border-neon-blue text-neon-blue rounded-lg hover:bg-neon-blue hover:text-white transition-all duration-300 text-sm sm:text-base">
-            <Github size={16} />
-            <span>Code</span>
-          </button>
         </div>
       </div>
     </div>
